@@ -43,5 +43,45 @@ summary(salesData)
 
 #adding extra columns
 salesData$Tax <- 0.21
-
 View(salesData)
+
+rowid <- seq(1,10)
+salesData <- cbind(salesData, rowid)
+View(salesData)
+
+salesData <- rbind(salesData, data.frame(Categories = c("Drink"), salesAmountinEuro = 10, Tax = 0.21, rowid = 11))
+View(salesData)
+
+# basic filtering
+salesData[salesData$Categories == "Bike",]
+
+salesData[salesData$Categories == "Bike",]
+
+salesData$Categories == "Bike"
+
+which(salesData$Categories == "Bike")
+
+salesData[which(salesData$Categories == "Bike"), c("salesAmountinEuro")]
+
+colnames(salesData)[colnames(salesData) == "Categories"] <- "Category"
+
+colnames(salesData)
+
+setwd("C:/Users/Administrator/Desktop/RDemo/RProject1/RProject1")
+salesData <- read.csv("sales data.txt", header = TRUE, sep = "|", stringsAsFactor=TRUE)
+head(salesData)
+View(salesData)
+
+tapply(salesData$OrderQuantity, salesData$Gender, FUN=sum)
+aggregate(salesData$OrderQuantity, by = list(salesData$Gender), FUN = sum)
+
+salesByYear <- aggregate(salesData$OrderQuantity, by = list(salesData$CalendarYear), FUN = sum)
+
+colnames(salesByYear) <- c("Year", "OrderQuantity")
+
+summary(salesByYear)
+
+plot(salesByYear$Year, salesByYear$OrderQuantity)
+
+linm <- lm(salesByYear$OrderQuantity ~ salesByYear$Year)
+abline(linm)

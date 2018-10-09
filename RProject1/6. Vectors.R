@@ -51,7 +51,7 @@ c(1,10,20) + c(2,3)
 
 listwithNA <- c(1:4, NA)
 
-sum(listwithNA
+sum(listwithNA)
 
 sum(listwithNA, na.rm = TRUE)
 
