@@ -29,14 +29,20 @@ salesData <- read.csv("sales data.txt", header = TRUE, sep = "|", stringsAsFacto
 str(salesData)
 
 # Group By with Factors
-oslist <- c("Android", "iOS", "Windows")
-logins <- sample(oslist, 10, replace = T)
-flogins <- factor(x = logins)
-duration <- rnorm(length(logins), 50, 10)
+productCategories <- c("Bike", "Pant", "Jacket")
+productCategoriesSales <- sample(productCategories, 10, replace = T)
+productCategoriesSales <- factor(x = productCategoriesSales)
 
-duration
-flogins
+salesAmountinEuro <- runif(length(productCategoriesSales),min=1,max = 10)
 
-tapply(duration, flogins, mean)
-tapply(duration, flogins, sum)
-tapply(duration, flogins, length)
+productCategoriesSales
+salesAmountinEuro
+
+tapply(salesAmountinEuro, productCategoriesSales, sum)
+tapply(salesAmountinEuro, productCategoriesSales, mean)
+tapply(salesAmountinEuro, productCategoriesSales, length)
+
+generateFactor <- gl(2, 5, length = 20, labels = c("Bikes", "Clothing"));
+length(generateFactor)
+summary(generateFactor)
+str(generateFactor)
