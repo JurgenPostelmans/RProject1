@@ -72,7 +72,10 @@ salesData <- read.csv("sales data.txt", header = TRUE, sep = "|", stringsAsFacto
 head(salesData)
 View(salesData)
 
-tapply(salesData$OrderQuantity, salesData$Gender, FUN=sum)
+#returns an array
+tapply(salesData$OrderQuantity, salesData$Gender, FUN = sum)
+
+#returns a data frame
 aggregate(salesData$OrderQuantity, by = list(salesData$Gender), FUN = sum)
 
 salesByYear <- aggregate(salesData$OrderQuantity, by = list(salesData$CalendarYear), FUN = sum)
