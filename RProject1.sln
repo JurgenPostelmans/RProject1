@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "RProject1", "RProject1\RProject1.rxproj", "{44E1836B-CE81-4142-A4EB-F177F021B935}"
 EndProject
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "SQLServer", "SQLServer\SQLServer.rxproj", "{96EB7997-7153-4D8D-A541-96B94FF1C024}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{44E1836B-CE81-4142-A4EB-F177F021B935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44E1836B-CE81-4142-A4EB-F177F021B935}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{44E1836B-CE81-4142-A4EB-F177F021B935}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{96EB7997-7153-4D8D-A541-96B94FF1C024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96EB7997-7153-4D8D-A541-96B94FF1C024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96EB7997-7153-4D8D-A541-96B94FF1C024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96EB7997-7153-4D8D-A541-96B94FF1C024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
