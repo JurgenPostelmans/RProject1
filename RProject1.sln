@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "RProject1", "RProject1\RProject1.rxproj", "{44E1836B-CE81-4142-A4EB-F177F021B935}"
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "R Language", "RProject1\R Language.rxproj", "{44E1836B-CE81-4142-A4EB-F177F021B935}"
 EndProject
 Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "SQLServer", "SQLServer\SQLServer.rxproj", "{96EB7997-7153-4D8D-A541-96B94FF1C024}"
 EndProject
