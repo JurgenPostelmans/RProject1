@@ -8,17 +8,18 @@ plot(CO2)
 
 installed.packages()
 
-install.packages("dplyr")
+#install.packages("dplyr")
 
-# http://samplecsvs.s3.amazonaws.com/Sacramentorealestatetransactions.csv
+baseUrl <- "http://samplecsvs.s3.amazonaws.com/Sacramentorealestatetransactions.csv"
+
+library(data.table)
+Sacramentorealestatetransactions <- fread(baseUrl)
 
 show(Sacramentorealestatetransactions)
 
 View(Sacramentorealestatetransactions)
 
 copy <- edit(Sacramentorealestatetransactions)
-
-fix(Sacramentorealestatetransactions)
 
 help(plot)
 

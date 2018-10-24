@@ -1,4 +1,5 @@
 
+
 # number and integer
 number <- 4.2
 
@@ -6,7 +7,7 @@ class(number)
 
 int <- 1L
 
-class(number)
+class(int)
 
 int <- as.integer(4.2)
 
@@ -24,7 +25,7 @@ no_int
 
 5 < 7 | NA
 
-flag = TRUE
+flag <- TRUE
 
 class(flag)
 
@@ -39,7 +40,7 @@ fullname <- "Jurgen" + " " + "Postelmans"
 
 fullname <- paste("Jurgen","Postelmans")
 fullname <- paste("Jurgen", "Postelmans", sep = "|")
-
+fullname <- paste0("Jurgen", "Postelmans")
 fullname
 
 somestring <- sprintf("Today is %s", date())

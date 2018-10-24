@@ -5,10 +5,22 @@ output: html_document
 
 # This is a header #
 ## Header 2 ##
+### Header 3 ###
 
 This is __bold text__
+* Item a
+* Item b
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+1. Item 1
+2. Item 2
+4. Item 3
+
+
+> This is a block quote
+
+~~strikethrough~~
+
+This an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **R Tools | Publish | Preview** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
@@ -23,3 +35,9 @@ plot(cars)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r, echo=FALSE}
+linm <- lm(faithful$eruptions ~ faithful$waiting)
+plot(faithful$waiting, faithful$eruptions)
+abline(linm)
+```
